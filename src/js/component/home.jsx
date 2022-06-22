@@ -4,6 +4,19 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import Counter from "./counter.jsx";
 
+
+
+  
+
+const d = new Date();
+let sec = d.getSeconds();
+
+let one = setInterval(sec,1000);
+
+function ren (){
+	render ()
+}
+
 //create your first component
 const Home = () => {
 	return (
@@ -26,7 +39,7 @@ const Home = () => {
                 5
                 </div>
                 <div className="col">
-                <Counter/>
+                <Counter segundos={one}/>
                 </div>
             </div>
         </div>
