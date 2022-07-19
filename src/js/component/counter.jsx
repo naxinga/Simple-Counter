@@ -17,7 +17,9 @@ let one = setInterval(incSeg,1000);*/
 
 
 const Counter = (props) => {
-    return  <div>{props.segundos}</div>
+    return  <div className="Contador card">
+                <div className="Seis card2">{props.Seis % 10} {props.Cinco % 10} {props.Cuatro % 10} {props.Tres % 10} {props.Dos % 10} {props.Uno % 10}</div>
+            </div>
 	
 };
 
